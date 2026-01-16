@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>around the world · ilker ender</title>
+  <meta name="description" content="19 months around the world trip — September 2013 to April 2015" />
+  <style>
+    :root{
+      --bg:#fff;
+      --fg:#000;
+      --muted:#444;
+      --hair:#ddd;
+      --max: 780px;
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      line-height:1.55;
+      letter-spacing:-0.01em;
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    main{
+      max-width: var(--max);
+      margin: 72px auto;
+      padding: 0 18px 96px;
+    }
+
+    h1{
+      font-size: clamp(2.0rem, 3vw, 2.6rem);
+      margin: 0 0 10px;
+      font-weight: 650;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle{
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    hr{
+      border: 0;
+      border-top: 1px solid var(--hair);
+      margin: 28px 0;
+    }
+
+    .section-title{
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+
+    p{margin: 0 0 14px;}
+
+    a{
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid var(--fg);
+    }
+    a:hover{border-bottom-style: dotted;}
+
+    .stat-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin: 18px 0;
+    }
+
+    .stat-box{
+      border: 1px solid var(--hair);
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .stat-number{
+      font-size: 2rem;
+      font-weight: 650;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .stat-label{
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .country-list{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 8px;
+      margin: 14px 0;
+      font-size: 0.95rem;
+    }
+
+    .expense-bar{
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+      font-size: 0.95rem;
+    }
+
+    .expense-label{
+      min-width: 120px;
+      color: var(--muted);
+    }
+
+    .expense-amount{
+      margin-left: auto;
+      padding-left: 12px;
+      font-weight: 500;
+    }
+
+    .bar-container{
+      flex: 1;
+      height: 6px;
+      background: var(--hair);
+      border-radius: 3px;
+      margin: 0 12px;
+      overflow: hidden;
+    }
+
+    .bar-fill{
+      height: 100%;
+      background: var(--fg);
+      border-radius: 3px;
+    }
+
+    .mono{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.93rem;
+      line-height: 1.45;
+    }
+
+    footer{
+      margin-top: 44px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#000; --fg:#fff; --muted:#bbb; --hair:#333; }
+      a{ border-bottom-color: var(--fg); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>around the world</h1>
+    <p class="subtitle">616 days · 28 countries · September 14, 2013 – May 22, 2015</p>
+
+    <p>
+      Between September 2013 and May 2015, I spent 616 days traveling around the world.
+      The journey covered 155,000 kilometers across 28 countries and 4 continents—from the Gobi Desert
+      in Mongolia to Patagonian glaciers in Chile, from Everest Base Camp to the Amazon rainforest.
+      This page is a brief summary of the route, costs, and key experiences from that trip.
+    </p>
+
+    <hr />
+
+    <div class="section-title">By the numbers</div>
+    
+    <div class="stat-grid">
+      <div class="stat-box">
+        <div class="stat-number">616</div>
+        <div class="stat-label">Days traveled</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">28</div>
+        <div class="stat-label">Countries</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Continents</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">155,000</div>
+        <div class="stat-label">Kilometers</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">$24,647</div>
+        <div class="stat-label">Total cost</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">$40</div>
+        <div class="stat-label">Daily average</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">200+</div>
+        <div class="stat-label">Cities visited</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">UNESCO sites</div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="section-title">Countries visited</div>
+    
+    <div class="country-list">
+      <div>🇲🇳 Mongolia</div>
+      <div>🇨🇳 China</div>
+      <div>🇯🇵 Japan</div>
+      <div>🇰🇷 South Korea</div>
+      <div>🇭🇰 Hong Kong</div>
+      <div>🇻🇳 Vietnam</div>
+      <div>🇰🇭 Cambodia</div>
+      <div>🇱🇦 Laos</div>
+      <div>🇹🇭 Thailand</div>
+      <div>🇲🇾 Malaysia</div>
+      <div>🇧🇳 Brunei</div>
+      <div>🇵🇭 Philippines</div>
+      <div>🇮🇩 Indonesia</div>
+      <div>🇮🇳 India</div>
+      <div>🇳🇵 Nepal</div>
+      <div>🇺🇸 USA</div>
+      <div>🇲🇽 Mexico</div>
+      <div>🇬🇹 Guatemala</div>
+      <div>🇳🇮 Nicaragua</div>
+      <div>🇨🇷 Costa Rica</div>
+      <div>🇵🇦 Panama</div>
+      <div>🇨🇴 Colombia</div>
+      <div>🇪🇨 Ecuador</div>
+      <div>🇪🇨 Galápagos</div>
+      <div>🇵🇪 Peru</div>
+      <div>🇧🇴 Bolivia</div>
+      <div>🇨🇱 Chile</div>
+      <div>🇦🇷 Argentina</div>
+    </div>
+
+    <hr />
+
+    <div class="section-title">Budget breakdown</div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Transportation</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 33.4%"></div></div>
+      <div class="expense-amount">$15,559 (33.4%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Food & Drink</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 23.9%"></div></div>
+      <div class="expense-amount">$11,121 (23.9%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Accommodation</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 18.4%"></div></div>
+      <div class="expense-amount">$8,539 (18.4%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Entertainment</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 6.8%"></div></div>
+      <div class="expense-amount">$3,158 (6.8%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Tours</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 4.7%"></div></div>
+      <div class="expense-amount">$2,187 (4.7%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Diving</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 4.4%"></div></div>
+      <div class="expense-amount">$2,066 (4.4%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Visas</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 2.5%"></div></div>
+      <div class="expense-amount">$1,155 (2.5%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Shopping</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 1.9%"></div></div>
+      <div class="expense-amount">$863 (1.9%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Education</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 1.9%"></div></div>
+      <div class="expense-amount">$890 (1.9%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Health</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 1.0%"></div></div>
+      <div class="expense-amount">$467 (1.0%)</div>
+    </div>
+
+    <hr />
+
+    <div class="section-title">Journey overview</div>
+    
+    <p><strong>Mongolia & Northeast Asia</strong> — Started in Ulaanbaatar on September 14, 2013. Explored Terelj National Park and spent a week in the Gobi Desert staying in traditional gers. Took the 32-hour Trans-Mongolian Express to Beijing. Visited UNESCO sites including the Great Wall, Forbidden City, and Temple of Heaven. Flew to Japan and traveled through Tokyo (National Museum, Shinjuku), Osaka, Kyoto (temples and Geisha district), Hiroshima (Peace Memorial), and Miyajima Island. Continued to South Korea visiting Busan, volcanic Jeju Island, and Seoul.</p>
+    
+    <p><strong>Nepal & India</strong> — Flew to Lukla and trekked to Everest Base Camp through Namche Bazaar and Tengboche. Spent time in Kathmandu (Durbar Square) and Pokhara (Phewa Lake). Crossed into India at Sunauli. Witnessed cremation ceremonies at Varanasi's ghats on the Ganges. Visited the Taj Mahal in Agra, explored Delhi's monuments, and practiced yoga in Rishikesh. Traveled extensively through Rajasthan: Jaipur (Amber Fort), Jodhpur (Mehrangarh Fort), Jaisalmer (desert camel safari), and Udaipur (City Palace, cooking course). Continued south through Mumbai (Bollywood, Dhobi Ghat), Goa beaches, and Kerala's backwaters.</p>
+    
+    <p><strong>Southeast Asia</strong> — Covered Thailand (Bangkok's Grand Palace, Chiang Mai temples, Pai, Shambala Festival, island diving in Koh Tao, rock climbing in Railay). Laos brought river tubing in Vang Vieng, alms-giving in Luang Prabang (UNESCO), and remote villages of Nong Khiaw. Vietnam featured Hanoi's Old Quarter, Halong Bay's karsts (UNESCO), Phong Nha caves, Hai Van Pass, Hoi An's ancient town (UNESCO), Cu Chi Tunnels, and Mekong Delta. Cambodia's Angkor Archaeological Park (UNESCO) was a multi-day exploration, plus Phnom Penh's Killing Fields. Malaysia included Perhentian Islands diving, Cameron Highlands tea plantations, Penang street food (UNESCO), and Kuala Lumpur. Brief Brunei rainforest visit. Philippines offered diving with Thresher Sharks (Malapascua), Whale Sharks (Oslob), and El Nido lagoons. Indonesia was extensive: Bali surfing, Mount Rinjani trek (Lombok), Komodo National Park dragons, Borneo's Sepilok Orangutans and Sipadan diving (UNESCO), Papua's Baliem Valley tribal festival, Mount Bromo sunrise, and Yogyakarta's Borobudur (UNESCO).</p>
+    
+    <p><strong>The Americas</strong> — Flew to San Francisco, visited Muir Woods redwoods, and did HelpX in Santa Cruz. Mexico brought Teotihuacan pyramids (UNESCO), Oaxaca markets, San Cristobal Spanish courses, and Yucatan cenotes and Chichen Itza (UNESCO). Guatemala featured more Spanish study in Xela, Lake Atitlan villages, and Semuc Champey pools. Nicaragua offered volcano boarding in Leon and Ometepe Island. Costa Rica had Monteverde cloud forest zip-lining. Panama brought Caribbean vibes in Bocas del Toro and the Panama Canal. Colombia featured Salento coffee region, Valle de Cocora palms, and Cali salsa. Ecuador's Galápagos Islands (UNESCO) were two weeks of wildlife encounters, plus Quito's equator and Baños adventure sports. Peru included Mancora surfing, Huacachina sandboarding, Nazca Lines flight, Amazon rainforest (Puerto Maldonado), Sacred Valley, and Machu Picchu (UNESCO). Bolivia brought La Paz cable cars, Huayna Potosi ice climbing, Potosi silver mines (UNESCO), and the 3-day Salar de Uyuni salt flats tour. Chile featured Atacama Desert, Valparaiso's colorful hills (UNESCO), and Torres del Paine National Park trek. Argentina offered Perito Moreno Glacier, Mendoza vineyards, and Buenos Aires tango. Brief Uruguay stop in Colonia del Sacramento (UNESCO). Brazil concluded with Iguazu Falls (UNESCO) and Rio de Janeiro on May 22, 2015 (Christ the Redeemer, Copacabana, Ipanema).</p>
+
+    <hr />
+
+    <div class="section-title">Notable activities</div>
+    
+    <p><strong>Trekking & Hiking</strong> — Everest Base Camp trek (Nepal), Mount Rinjani 3-day climb (Indonesia), Torres del Paine multi-day trek (Chile), Huayna Potosi ice climbing (Bolivia), Baliem Valley tribal trekking (Papua)</p>
+    
+    <p><strong>Scuba Diving</strong> — PADI certification and diving in Sipadan (Malaysia), Thresher Shark dawn dives (Malapascua, Philippines), Whale Shark encounters (Oslob, Philippines), Galápagos underwater expeditions including Kicker Rock and Gordon Rocks with hammerhead sharks, Perhentian Islands (Malaysia), Koh Tao (Thailand), Komodo National Park (Indonesia)</p>
+    
+    <p><strong>Wildlife Encounters</strong> — Gobi Desert 7-day expedition (Mongolia), Orangutan rehabilitation center (Sepilok, Borneo), Komodo dragons in their natural habitat, Kinabatangan River safari for pygmy elephants (Borneo), Amazon rainforest exploration (Puerto Maldonado, Peru), Galápagos Islands wildlife (sea lions, marine iguanas, giant tortoises)</p>
+    
+    <p><strong>Adventure Sports</strong> — Volcano boarding (Leon, Nicaragua), sandboarding and dune buggy (Huacachina, Peru), surfing (Bali, Lombok, Mancora), zip-lining through cloud forests (Monteverde, Costa Rica), rock climbing (Railay, Thailand), river tubing (Vang Vieng, Laos)</p>
+    
+    <p><strong>Cultural Immersion</strong> — Spanish language courses (San Cristobal, Mexico and Xela, Guatemala), Indian cooking course (Udaipur), homestays (Mekong Delta, Lake Titicaca islands, Guatemala), attending Shambala Festival (Thailand), Baliem Valley tribal festival (Papua), yoga in Rishikesh (India)</p>
+    
+    <p><strong>Unique Experiences</strong> — Trans-Mongolian Express 32-hour train journey, staying in traditional Mongolian gers, cremation ceremonies at Varanasi ghats, sunrise at Angkor Wat, Nazca Lines flight, 3-day Salar de Uyuni salt flats tour, Perito Moreno Glacier viewing, couchsurfing and HelpX stays</p>
+
+    <hr />
+
+    <div class="section-title">Travel style</div>
+    
+    <p>
+      Backpacking with a mix of hostels, guesthouses, and occasional couchsurfing.
+      Traveled light, used local transportation, ate street food, and prioritized experiences over comfort.
+      The trip was self-funded through savings from previous work.
+    </p>
+
+    <hr />
+
+    <div class="section-title">Interactive map</div>
+    
+    <p>
+      <a href="https://www.google.com/maps/d/u/0/edit?hl=en&mid=1cn-kTZPXVfeYN9aBsTEW0iy9B38&ll=-1.1107349234346628%2C0&z=3" target="_blank" rel="noopener noreferrer">View detailed travel map</a> with all locations, routes, and photos from the journey.
+    </p>
+
+    <hr />
+
+    <div class="section-title">Transportation breakdown</div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Flights</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 45.2%"></div></div>
+      <div class="expense-amount">~70,000 km (45%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Bus Travel</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 38.7%"></div></div>
+      <div class="expense-amount">~60,000 km (39%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Train</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 12.9%"></div></div>
+      <div class="expense-amount">~20,000 km (13%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Boat/Ferry</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 1.9%"></div></div>
+      <div class="expense-amount">~3,000 km (2%)</div>
+    </div>
+    
+    <div class="expense-bar">
+      <div class="expense-label">Motorbike</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 1.3%"></div></div>
+      <div class="expense-amount">~2,000 km (1%)</div>
+    </div>
+
+    <hr />
+
+    <div class="section-title">Interesting facts</div>
+    
+    <p class="mono">
+• Distance traveled equals circling Earth almost 4 times
+• Longest single journey: 32-hour Trans-Mongolian Express
+• Most expensive meal: Peking duck in Beijing ($92)
+• Cheapest accommodation: Couchsurfing (free)
+• Longest country stay: Indonesia (~80 days total)
+• Languages encountered: 20+
+• Postcards sent: 50+
+• Currencies used: 28 different currencies
+• Visa applications: 15+ countries
+• Adventure activities: Diving, trekking, ice climbing, surfing, volcano boarding
+• Favorite discovery: The kindness of strangers everywhere
+    </p>
+
+    <hr />
+
+    <div class="section-title">Media coverage</div>
+    
+    <p>I also went on news:</p>
+    
+    <ul>
+      <li><a href="https://www.hurriyet.com.tr/seyahat/donus-parasi-kalincaya-kadar-gezecekler-27289847" target="_blank" rel="noopener noreferrer">Dönüş parası kalıncaya kadar gezecekler</a> — Hürriyet</li>
+      <li><a href="https://gezimanya.com/Soylesiler/ilker-ender-iyi-bir-arastirmayla-her-butceye-gore-bir-seyahat-var" target="_blank" rel="noopener noreferrer">İyi bir araştırmayla her bütçeye göre bir seyahat var</a> — Gezimanya</li>
+      <li><a href="https://www.birhayalinpesinde.com/dunyayi-gezen-10-ornek-kadin-gezgin#10-lale_cizmeci_ve_ilker_ender" target="_blank" rel="noopener noreferrer">Dünyayı gezen çift</a> — Bir Hayalin Peşinde</li>
+    </ul>
+
+    <hr />
+
+    <p style="color: var(--muted); font-size: 0.95rem;">
+      <a href="index.html">← Back to home</a>
+    </p>
+
+    <footer>
+      © <span id="y"></span> ilker ender · around the world 2013–2015
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
